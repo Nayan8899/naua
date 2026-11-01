@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: application-container
-        image: nginx:1.25-alpine # Replace with your image registry link
+        image: httpd # Replace with your image registry link
         imagePullPolicy: IfNotPresent
         
         ports:
