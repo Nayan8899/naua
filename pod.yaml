@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: anay
   namespace: nayan
-  label:
+  labels:
     app: webapp
 spec:
   replicas: 7
@@ -12,7 +12,8 @@ spec:
       app: webapp
   template:
     metadata:
-      app: webapp
+      labels:
+        app: webapp
     spec:
       containers:
         - name: nau
